@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Tooltip Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        #simple {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #top {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        #bottom {
+            background-color: #FF5722;
+            color: white;
+        }
+
+        #left {
+            background-color: #FFC107;
+            color: black;
+        }
+
+        #right {
+            background-color: #9C27B0;
+            color: white;
+        }
+
+        #paragraph {
+            cursor: pointer;
+            color: #333;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+            z-index: 1000;
+            font-size: 14px;
+        }
+
+        .tooltip.fade-in {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="left">Left</button>
+        <button id="simple">Simple</button>
+        <button id="top">Top</button>
+        <button id="bottom">Bottom</button>
+        <p>This is <span id="text">paragraph</span></p>
+        <button id="right">Right</button>
+    </div>
+
+    <script src="yoyo-tooltip.min.js"></script>
+    <script>
+        yoyoTooltip({
+            id: '#text',
+            content: '😂 Simple Tooltip on text',
+        });
+
+        yoyoTooltip({
+            id: '#simple',
+            content: '🤣 Simple Tooltip',
+        });
+
+        yoyoTooltip({
+            id: '#top',
+            direction: 'top',
+            content: '😍<strong>Hello Worlds</strong>',
+            animation: 'fade',
+            delay: '0',
+            trigger: 'hover',
+            backgroundColor: '#ff0000',
+            color: '#ffffff'
+        });
+
+        yoyoTooltip({
+            id: '#bottom',
+            direction: 'bottom',
+            content: '😁<strong>Hello Worlds</strong>',
+            animation: 'fade',
+            delay: '0',
+            trigger: 'hover',
+            backgroundColor: 'yellow',
+            color: 'red',
+        });
+
+        yoyoTooltip({
+            id: '#left',
+            direction: 'left',
+            content: '😊<strong>Hello Worlds</strong>',
+            animation: 'fade',
+            delay: '0',
+            trigger: 'hover',
+        });
+
+        yoyoTooltip({
+            id: '#right',
+            direction: 'right',
+            content: '😎<strong>Hello Worlds</strong>',
+            animation: 'fade',
+            delay: '0',
+            trigger: 'hover',
+        });
+    </script>
+</body>
+
+</html>
