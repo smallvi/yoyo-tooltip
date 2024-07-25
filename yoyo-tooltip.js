@@ -88,6 +88,11 @@ function addTooltipStyles() {
       opacity: 1;
       visibility: visible;
     }
+
+    .yoyo-tooltip-text {
+      text-decoration: underline dotted red 1px;
+      text-underline-offset: 5px;
+    }
   `;
   document.head.appendChild(style);
 }
@@ -109,6 +114,11 @@ function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hov
 
   element.style.position = 'relative';
   element.appendChild(tooltip);
+
+  const textTags = ['SPAN', 'P', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'STRONG']; // 这里可以根据需要添加更多的标签名
+  if (textTags.includes(element.tagName)) {
+    element.classList.add('yoyo-tooltip-text');
+  }
 
   const showTooltip = () => {
     setTimeout(() => {

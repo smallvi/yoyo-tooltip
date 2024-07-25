@@ -97,10 +97,16 @@
         <button id="bottom">Bottom</button>
         <p>This is <span id="text">paragraph</span></p>
         <button id="right">Right</button>
+        <h2 id="header">Header</h2>
     </div>
 
     <script src="yoyo-tooltip.min.js"></script>
     <script>
+        yoyoTooltip({
+            id: '#header',
+            content: '😂 Simple Tooltip on text',
+        });
+
         yoyoTooltip({
             id: '#text',
             content: '😂 Simple Tooltip on text',
