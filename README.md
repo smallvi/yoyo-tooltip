@@ -62,7 +62,7 @@ Include the following files in your project:
 
 ## Sample
 
-[Demo](https://smallvi.github.io/yoyo_tooltip/)
+[Demo](https://smallvi.github.io/yoyo-tooltip/)
 
 ## License
 
