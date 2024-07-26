@@ -91,16 +91,11 @@ function addTooltipStyles() {
       opacity: 1;
       visibility: visible;
     }
-
-    .yoyo-tooltip-text {
-      text-decoration: underline dotted red 1px;
-      text-underline-offset: 5px;
-    }
   `;
   document.head.appendChild(style);
 }
 
-function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white', boxShadow = 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px' }) {
+function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white', boxShadow = 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px', targetHighlight = true, targetTextDecoration = "underline dotted red 1px", targetUnderlineOffset = "5px", targetBackgroundColor = '', targetFontWeight = '' }) {
   addTooltipStyles();
 
   const element = document.querySelector(id);
@@ -119,9 +114,14 @@ function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hov
   element.style.position = 'relative';
   element.appendChild(tooltip);
 
-  const textTags = ['SPAN', 'P', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'STRONG'];
-  if (textTags.includes(element.tagName)) {
-    element.classList.add('yoyo-tooltip-text');
+  if (targetHighlight) {
+    const textTags = ['SPAN', 'P', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'STRONG'];
+    if (textTags.includes(element.tagName)) {
+      element.style.textDecoration = targetTextDecoration;
+      element.style.textUnderlineOffset = targetUnderlineOffset;
+      element.style.backgroundColor = targetBackgroundColor;
+      element.style.fontWeight = targetFontWeight;
+    }
   }
 
   const showTooltip = () => {

@@ -41,14 +41,19 @@ Include the following files in your project:
 
     ```javascript
     yoyoTooltip({
-        id: '#top',
-        content: '😍<strong>Hello Worlds</strong>',
+        id: '#text',
+        content: '😎 <strong>Advance Tooltip</strong> on text',
         direction: 'top',
         delay: '0',
         trigger: 'hover',
         backgroundColor: '#ff0000',
         color: '#ffffff',
-        boxShadow: 'rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px'
+        boxShadow: 'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px',
+        targetHighlight: true,
+        targetTextDecoration: 'underline wavy red 1px',
+        targetUnderlineOffset: '10px',
+        targetBackgroundColor: 'yellow',
+        targetFontWeight: 'bold',
     });
     ```
 
@@ -61,6 +66,12 @@ Include the following files in your project:
 - backgroundColor: Optional (Default black)
 - color: Optional (Default white)
 - boxShadow: Optional
+- targetHighlight: Optional, {true, false} (Default true)
+- targetTextDecoration: Optional
+- targetUnderlineOffset: Optional
+- targetBackgroundColor: Optional
+- targetFontWeight: Optional
+
 
 ## Sample
 
