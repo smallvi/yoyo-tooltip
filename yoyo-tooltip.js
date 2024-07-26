@@ -7,13 +7,16 @@ function addTooltipStyles() {
   style.textContent = `
     .yoyo-tooltip {
       position: absolute;
+      z-index: 99999;
       color: #fff;
       padding: 5px 10px;
       border-radius: 5px;
       white-space: nowrap;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      pointer-events: none;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
 
     .yoyo-tooltip.top {
@@ -97,7 +100,7 @@ function addTooltipStyles() {
   document.head.appendChild(style);
 }
 
-function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white' }) {
+function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white', boxShadow = 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px' }) {
   addTooltipStyles();
 
   const element = document.querySelector(id);
@@ -109,13 +112,14 @@ function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hov
   tooltip.innerHTML = content;
   tooltip.style.backgroundColor = backgroundColor;
   tooltip.style.color = color;
+  tooltip.style.boxShadow = boxShadow;
 
   tooltip.style.setProperty('--tooltip-bg-color', backgroundColor);
 
   element.style.position = 'relative';
   element.appendChild(tooltip);
 
-  const textTags = ['SPAN', 'P', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'STRONG']; // 这里可以根据需要添加更多的标签名
+  const textTags = ['SPAN', 'P', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'STRONG'];
   if (textTags.includes(element.tagName)) {
     element.classList.add('yoyo-tooltip-text');
   }

@@ -47,18 +47,20 @@ Include the following files in your project:
         delay: '0',
         trigger: 'hover',
         backgroundColor: '#ff0000',
-        color: '#ffffff'
+        color: '#ffffff',
+        boxShadow: 'rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px'
     });
     ```
 
 ## Param
 - id: target element id
 - content: Main Text
-- direction: {'top', 'right', 'left', 'bottom'} (Default Top)
-- delay: Default 0 (1000 = 1 sec)
-- trigger: {'hover','click'} (Default Hover)
-- backgroundColor: Default black
-- color: Default white
+- direction: Optional, {'top', 'right', 'left', 'bottom'} (Default Top)
+- delay: Optional, (Default 0) (1000 = 1 sec)
+- trigger: Optional, {'hover','click'} (Default Hover)
+- backgroundColor: Optional (Default black)
+- color: Optional (Default white)
+- boxShadow: Optional
 
 ## Sample
 
