@@ -8,9 +8,9 @@
 
 This plugin provides a customizable tooltip without any dependencies.
 
-<!-- ## Screenshot
+## Screenshot
 
-![Yoyo Tooltip](images/sample_yoyo_toast.png) -->
+![Yoyo Tooltip](images/sample_yoyo_tooltip.png)
 
 ## Installation
 

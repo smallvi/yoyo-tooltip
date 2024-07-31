@@ -1,0 +1,146 @@
+body {
+    background-color: #525252;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.github-link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    color: #007bff;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+    }
+}
+
+#right {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#top {
+    background-color: #2196F3;
+    color: white;
+}
+
+#bottom {
+    background-color: #FF5722;
+    color: white;
+}
+
+#left {
+    background-color: #FFC107;
+    color: black;
+}
+
+#paragraph {
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.tooltip.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+button {
+    padding: 20px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 50px 10px;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#right {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#top {
+    background-color: #2196F3;
+    color: white;
+}
+
+#bottom {
+    background-color: #FF5722;
+    color: white;
+}
+
+#left {
+    background-color: #FFC107;
+    color: black;
+}
+
+#paragraph {
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.tooltip.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
