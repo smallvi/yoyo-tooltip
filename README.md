@@ -1,8 +1,8 @@
 # Yoyo Tooltip
 
-## Author
-- Yeo
-- smallvi@gmail.com
+![Yoyo Tooltip](images/yoyo_tooltip_banner.png)
+
+[View Demo](https://smallvi.github.io/yoyo-tooltip/)
 
 ## Introduction
 
@@ -71,11 +71,6 @@ Include the following files in your project:
 - targetUnderlineOffset: Optional
 - targetBackgroundColor: Optional
 - targetFontWeight: Optional
-
-
-## Sample
-
-[Demo](https://smallvi.github.io/yoyo-tooltip/)
 
 ## License
 
