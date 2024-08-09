@@ -90,6 +90,14 @@ h1 {
     opacity: 1;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
 button {
     padding: 20px 30px;
     font-size: 16px;
@@ -241,4 +249,31 @@ button:hover {
     100% {
         transform: translateY(0);
     }
+}
+
+.browser_simple {
+    width: 100%;
+}
+
+.browser_advance {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .browser_simple {
+        width: 550px;
+        margin: auto;
+    }
+
+    .browser_advance {
+        width: 750px;
+        margin: auto;
+    }
+    
 }
