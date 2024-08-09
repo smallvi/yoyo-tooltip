@@ -90,12 +90,9 @@ h1 {
     opacity: 1;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 50px;
+.buttons button {
+    display: block;
+    margin: 0 auto 60px auto; 
 }
 
 button {
@@ -106,7 +103,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     margin: 50px 10px;
-
+    display: block;
 }
 
 button:hover {
@@ -275,5 +272,19 @@ button:hover {
         width: 750px;
         margin: auto;
     }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .buttons button {
+        margin: 15px;
+    }
     
+    
+
 }
