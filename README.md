@@ -2,7 +2,7 @@
 
 ![Yoyo Tooltip](images/yoyo_tooltip_banner.png)
 
-[View Demo](https://smallvi.github.io/yoyo-tooltip/)
+[View Demo](https://smallvi.github.io/yoyoTooltip/)
 
 ## Introduction
 
