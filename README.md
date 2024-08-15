@@ -14,19 +14,19 @@ This plugin provides a customizable tooltip without any dependencies.
 
 ## Installation
 
-Include the following files in your project:
+- #### Download
 
-- `yoyo-tooltip.min.js`
+```html
+<script src="path/to/yoyoTooltip.min.js"></script>
+```
+
+- #### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/smallvi/yoyoTooltip/dist/yoyoTooltip.min.js"></script>
+```
 
 ## Usage
-
-1. Include `yoyo-tooltip.min.js` in your HTML file:
-
-   ```html
-   <script src="path/to/yoyo-tooltip.min.js"></script>
-   ```
-
-2. Initialize the plugin in your JavaScript:
     
     ### Simple Yoyo Tooltip
 

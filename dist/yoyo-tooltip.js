@@ -1,4 +1,4 @@
-/*! Yoyo Tooltip v1.0.0 (https://github.com/smallvi/yoyo-tooltip) */
+/*! Yoyo Tooltip v1.0.0 (https://github.com/smallvi/yoyoTooltip) */
 function addTooltipStyles() {
   if (document.getElementById('yoyo-tooltip-styles')) return;
 
