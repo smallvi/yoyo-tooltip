@@ -1,4 +1,3 @@
-/*! Yoyo Tooltip v1.0.0 (https://github.com/smallvi/yoyoTooltip) */
 function addTooltipStyles() {
   if (document.getElementById('yoyo-tooltip-styles')) return;
 
@@ -95,7 +94,7 @@ function addTooltipStyles() {
   document.head.appendChild(style);
 }
 
-function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white', boxShadow = 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px', targetHighlight = true, targetTextDecoration = "underline dotted red 1px", targetUnderlineOffset = "5px", targetBackgroundColor = '', targetFontWeight = '' }) {
+export function yoyoTooltip({ id, direction = 'top', content, delay = 0, trigger = 'hover', backgroundColor = '#333', color = 'white', boxShadow = 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px', targetHighlight = true, targetTextDecoration = "underline dotted red 1px", targetUnderlineOffset = "5px", targetBackgroundColor = '', targetFontWeight = '' }) {
   addTooltipStyles();
 
   const element = document.querySelector(id);
