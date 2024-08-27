@@ -1,6 +1,6 @@
 {
   "name": "yoyo-tooltip",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Yoyo Tooltip is a customizable tooltip plugin that operates without any dependencies. It’s designed for ease of use and flexibility, allowing you to add stylish and functional tooltips to your website or application.",
   "main": "./dist/yoyoTooltip.min.mjs",
   "scripts": {
